@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    z-index: -2;
+}
+
+.circle-opening-1{
+    width: 0;
+    height: 0;
+    border: 15em solid rgb(243, 215, 57);
+    border-radius: 50%;
+    position: fixed;
+    z-index: -1;
+    bottom: -30em;
+    left: -30em;
+    animation: circle1 3s forwards ease-in-out;
+}
+
+.circle-opening-2{
+    width: 0;
+    height: 0;
+    border: 10em solid rgb(243, 200, 57);
+    border-radius: 50%;
+    position: fixed;
+    z-index: -1;
+    top: -20em;
+    right: -20em;
+    animation: circle2 2s forwards ease-in-out;
+}
+
+.btn1, .btn2, .btn3, .btn4{
+    position: absolute;
+    top: 20%;
+}
+
+.btn1{
+    left: 1.5%;
+}
+
+.btn2{
+    left: 26.5%;
+}
+
+.btn3{
+    left: 51.5%;
+}
+
+.btn4{
+    left: 76.5%;
+}
+
+.hover-btn{
+    display: inline-block;
+    padding: 6px 10px;
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+    transition: 0.7s ease-in-out;
+    width: 20%;
+    height: 4%;
+    padding: 0.5em;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 0;
+    transition: 0.5s;
+}
+
+.title-btn{
+    font-size: 150%;
+    display: inline-block;
+    background: linear-gradient(to bottom, transparent 50%, #fcec13e7 50%);
+    transition: 0.3s linear;
+}
+
+.content{
+    transition-delay: 0s;
+    padding: 2em;
+    visibility: hidden;
+}
+
+.hover-btn:hover{
+    border-radius: 50%;
+    height: 40%;
+    padding: 0.5em;
+}
+
+.hover-btn:hover > .content{
+    transition-delay: 0.3s;
+    visibility: visible;
+}
+
+@keyframes circle1{
+    0%{
+        bottom: -30em;
+        left: -30em;
+    }
+    80%{
+        bottom: -3em;
+        left: -3em;
+    }
+    100%{
+        bottom: -5em;
+        left: -5em;
+    }
+}
+
+@keyframes circle2{
+    0%{
+        top: -20em;
+        right: -20em;
+    }
+    80%{
+        top: -3em;
+        right: -3em;
+    }
+    100%{
+        top: -5em;
+        right: -5em;
+    }
+}
